@@ -1,0 +1,94 @@
+:root {
+  --title-color: #212121;
+  --active-linc-color: #2196f3;
+  --text-color: #757575;
+  --header-white: #ffffff;
+  --background-white: #e5e5e5;
+  --background-team: #f5f4fa;
+  --background-footer-color: #2f303a;
+}
+
+body {
+  font-family: "Roboto", sans-serif, "Raleway", sans-serif;
+  color: var(--title-color, black);
+  text-decoration: none;
+}
+
+/* !!! Header and Footer !!! */
+
+.header {
+  background-color: var(--header-white, white);
+  font-weight: 500;
+}
+
+.footer {
+  color: var(--header-white, white);
+  background-color: var(--background-footer-color, black);
+}
+
+.logo {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  color: var(--active-linc-color, lightblue);
+}
+
+.logo__header {
+  color: var(--title-color, black);
+}
+
+.logo__footer {
+  color: var(--header-white, white);
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--title-color, black);
+}
+
+.contact {
+  text-decoration: none;
+  color: var(--text-color, gray);
+}
+
+.nav__link:hover,
+.nav__link:focus,
+.contact:hover,
+.contact:focus {
+  color: var(--active-linc-color, lightblue);
+}
+
+/* !!! Main block !!! */
+
+.section__main {
+  color: var(--header-white);
+  background-color: var(--background-footer-color, gray);
+  width: 1600px;
+  height: 600px;
+}
+
+.main__button {
+  color: var(--header-white, white);
+  background-color: var(--active-linc-color, lightblue);
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+}
+
+/* !!! Features, Pictures and Team block !!! */
+
+.features__text,
+.team__prof {
+  color: var(--text-color, gray);
+}
+
+.title {
+}
+
+.section__team {
+  background-color: var(--background-team);
+}
+
+.team__item {
+  background-color: var(--header-white, white);
+}
