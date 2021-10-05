@@ -5,14 +5,17 @@
   --header-white: #ffffff;
   --background-team: #f5f4fa;
   --background-footer-color: #2f303a;
+  --contact-footer-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
   font-family: "Roboto", "Raleway", sans-serif;
+  font-style: normal;
   color: var(--title-color, black);
   font-size: 14px;
   font-weight: normal;
   line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 
 /* !!! Header and Footer !!! */
@@ -20,6 +23,7 @@ body {
 .header {
   background-color: var(--header-white, white);
   font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .footer {
@@ -45,9 +49,17 @@ body {
   color: var(--header-white, white);
 }
 
+.nav__item {
+  list-style: none;
+}
+
 .nav__link {
   text-decoration: none;
   color: var(--title-color, black);
+}
+
+.contacts {
+  list-style: none;
 }
 
 .contact {
@@ -55,16 +67,28 @@ body {
   color: var(--text-color, gray);
 }
 
+.contact__footer {
+  text-decoration: none;
+  color: var(--contact-footer-color, white);
+}
+
 .nav__link:hover,
 .nav__link:focus,
 .contact:hover,
-.contact:focus {
+.contact:focus,
+.contact__footer:hover,
+.contact__footer:focus {
   color: var(--active-linc-color, lightblue);
+}
+
+.address {
+  font-style: normal;
 }
 
 /* !!! Main block !!! */
 
 .section__main {
+  letter-spacing: 0.06em;
   color: var(--header-white);
   background-color: var(--background-footer-color, gray);
   width: 1600px;
@@ -72,9 +96,10 @@ body {
 }
 
 .main__title {
-  font-size: 24px;
+  font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
+  text-transform: uppercase;
 }
 
 .main__button {
@@ -84,6 +109,7 @@ body {
   font-size: 16px;
   font-weight: bold;
   line-height: 1.87;
+  letter-spacing: 0.06em;
   cursor: pointer;
   width: 200px;
   height: 50px;
@@ -96,13 +122,30 @@ body {
   line-height: 1.16;
 }
 
+.features {
+  list-style: none;
+}
+
+.features__title {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
 .features__text {
   color: var(--text-color, gray);
   line-height: 1.7;
 }
 
+.pictures {
+  list-style: none;
+}
+
 .section__team {
   background-color: var(--background-team);
+}
+
+.team {
+  list-style: none;
 }
 
 .team__item {
@@ -119,13 +162,18 @@ body {
   color: var(--text-color, gray);
 }
 
-/* !!! Portfolio -> Filter block !!! */
+/* !!! Portfolio !!! */
+
+.filter {
+  list-style: none;
+}
 
 .filter__button {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
+  letter-spacing: 0.03em;
   color: var(--title-color, black);
   background-color: var(--background-team);
   cursor: pointer;
@@ -137,14 +185,18 @@ body {
   background-color: var(--active-linc-color, lightblue);
 }
 
-/* !!! Portfolio -> Portfolio block !!! */
+.portfolio__item {
+  list-style: none;
+}
 
 .portfolio__title {
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .portfolio__specialization {
   font-size: 16px;
   line-height: 1.87;
+  color: var(--text-color, gray);
 }

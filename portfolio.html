@@ -22,7 +22,7 @@
         <a class="logo" href="#">Web<span class="logo__header">Studio</span></a>
 
         <nav class="nav">
-          <ul>
+          <ul class="nav__item">
             <li><a class="nav__link" href="./index.html">Студия</a></li>
             <li><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
             <li><a class="nav__link" href="#">Контакты</a></li>
@@ -43,10 +43,11 @@
     </header>
 
     <main>
-      <!-- FILTER-->
+      <!-- PORTFOLIO -->
 
-      <section class="filter">
-        <ul class="filter__item">
+      <section class="portfolio">
+        <!-- filter -->
+        <ul class="filter">
           <li>
             <button class="filter__button" type="button">Все</button>
           </li>
@@ -63,11 +64,8 @@
             <button class="filter__button" type="button">Маркетинг</button>
           </li>
         </ul>
-      </section>
+        <!-- /filter -->
 
-      <!-- PORTFOLIO -->
-
-      <section class="portfolio">
         <ul class="portfolio__item">
           <!-- p__project1-->
           <li class="portfolio__project">
@@ -208,12 +206,14 @@
 
         <ul class="contacts">
           <li>
-            <a class="contact" href="mailto:info@devstudio.com"
+            <a class="contact__footer" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="contact__footer" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
