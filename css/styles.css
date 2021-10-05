@@ -11,6 +11,8 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: var(--title-color, black);
   font-size: 14px;
+  font-weight: normal;
+  line-height: 1.14;
 }
 
 /* !!! Header and Footer !!! */
@@ -23,12 +25,15 @@ body {
 .footer {
   color: var(--header-white, white);
   background-color: var(--background-footer-color, black);
+  line-height: 1.7;
 }
 
 .logo {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
+  font-weight: bold;
+  line-height: 1.19;
   color: var(--active-linc-color, lightblue);
 }
 
@@ -62,9 +67,14 @@ body {
 .section__main {
   color: var(--header-white);
   background-color: var(--background-footer-color, gray);
-  font-size: 24px;
   width: 1600px;
   height: 600px;
+}
+
+.main__title {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.36;
 }
 
 .main__button {
@@ -72,6 +82,8 @@ body {
   background-color: var(--active-linc-color, lightblue);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  font-weight: bold;
+  line-height: 1.87;
   cursor: pointer;
   width: 200px;
   height: 50px;
@@ -81,11 +93,12 @@ body {
 
 .title {
   font-size: 36px;
+  line-height: 1.16;
 }
 
-.features__text,
-.team__prof {
+.features__text {
   color: var(--text-color, gray);
+  line-height: 1.7;
 }
 
 .section__team {
@@ -94,6 +107,16 @@ body {
 
 .team__item {
   background-color: var(--header-white, white);
+  line-height: 1.19;
+}
+
+.team__name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.team__prof {
+  color: var(--text-color, gray);
 }
 
 /* !!! Portfolio -> Filter block !!! */
@@ -101,6 +124,8 @@ body {
 .filter__button {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
   color: var(--title-color, black);
   background-color: var(--background-team);
   cursor: pointer;
@@ -116,8 +141,10 @@ body {
 
 .portfolio__title {
   font-size: 18px;
+  line-height: 2;
 }
 
 .portfolio__specialization {
   font-size: 16px;
+  line-height: 1.87;
 }
