@@ -3,15 +3,14 @@
   --active-linc-color: #2196f3;
   --text-color: #757575;
   --header-white: #ffffff;
-  --background-white: #e5e5e5;
   --background-team: #f5f4fa;
   --background-footer-color: #2f303a;
 }
 
 body {
-  font-family: "Roboto", sans-serif, "Raleway", sans-serif;
+  font-family: "Roboto", "Raleway", sans-serif;
   color: var(--title-color, black);
-  text-decoration: none;
+  font-size: 14px;
 }
 
 /* !!! Header and Footer !!! */
@@ -63,6 +62,7 @@ body {
 .section__main {
   color: var(--header-white);
   background-color: var(--background-footer-color, gray);
+  font-size: 24px;
   width: 1600px;
   height: 600px;
 }
@@ -70,6 +70,8 @@ body {
 .main__button {
   color: var(--header-white, white);
   background-color: var(--active-linc-color, lightblue);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
   cursor: pointer;
   width: 200px;
   height: 50px;
@@ -77,12 +79,13 @@ body {
 
 /* !!! Features, Pictures and Team block !!! */
 
+.title {
+  font-size: 36px;
+}
+
 .features__text,
 .team__prof {
   color: var(--text-color, gray);
-}
-
-.title {
 }
 
 .section__team {
@@ -91,4 +94,30 @@ body {
 
 .team__item {
   background-color: var(--header-white, white);
+}
+
+/* !!! Portfolio -> Filter block !!! */
+
+.filter__button {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: var(--title-color, black);
+  background-color: var(--background-team);
+  cursor: pointer;
+}
+
+.filter__button:hover,
+.filter__button:focus {
+  color: var(--header-white, white);
+  background-color: var(--active-linc-color, lightblue);
+}
+
+/* !!! Portfolio -> Portfolio block !!! */
+
+.portfolio__title {
+  font-size: 18px;
+}
+
+.portfolio__specialization {
+  font-size: 16px;
 }
