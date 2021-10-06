@@ -55,7 +55,7 @@ body {
 
 .nav__link {
   text-decoration: none;
-  color: var(--title-color, black);
+  color: inherit;
 }
 
 .contacts {
@@ -78,6 +78,10 @@ body {
 .contact:focus,
 .contact__footer:hover,
 .contact__footer:focus {
+  color: var(--active-linc-color, lightblue);
+}
+
+.nav__link.current {
   color: var(--active-linc-color, lightblue);
 }
 
@@ -105,7 +109,7 @@ body {
 .main__button {
   color: var(--header-white, white);
   background-color: var(--active-linc-color, lightblue);
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.87;
@@ -169,12 +173,12 @@ body {
 }
 
 .filter__button {
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  color: var(--title-color, black);
+  color: inherit;
   background-color: var(--background-team);
   cursor: pointer;
 }
